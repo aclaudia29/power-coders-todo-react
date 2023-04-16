@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import { PrivateRoutes } from './components/PrivateRoutes'
+import Notifications from './components/Notifications'
 
 // Views
 import Index from './views/index'
@@ -12,6 +13,8 @@ function App() {
   return (
     <>
       <Navbar />
+      <Notifications />
+
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/login" element={<Login />} />
